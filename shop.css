@@ -1,0 +1,275 @@
+body{                                   /* Commit: style body with font, reset margins, background */
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(231, 229, 229);
+}
+
+nav{                                    /* Commit: style navigation bar as flex with shadow and fixed top */
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 4px 4px 0px rgb(155, 154, 154);
+    position: fixed;
+    width: 100%;
+    top: 0%;
+}
+
+nav ul a{                               /* Commit: style nav links with spacing and font */
+    text-decoration: none;
+    margin-inline: 25px;
+    font-size: 18px;
+    color: black;
+}
+
+nav ul a:hover{                         /* Commit: add hover effect with red underline */
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+nav button{                             /* Commit: style login button with red bg and white text */
+    width: 80px;
+    height: 28px;
+    background-color:rgb(231, 5, 5) ;
+    color: white;
+    font-size: 18px;
+    border: none;
+}
+
+nav button:hover{                       /* Commit: hover effect for login button */
+    border: 2px solid red;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+}
+
+nav ul{                                 /* Commit: adjust spacing for nav links */
+    margin-right: 26px;
+    margin-top: 22px;
+}
+
+nav .logo{                              /* Commit: add margin for logo text */
+    margin-left: 23px;
+}
+
+.main{                                  /* Commit: flex layout for hero section */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 115px;
+}
+
+.mainText{                              /* Commit: adjust hero text margin */
+    margin-top: 33px;
+}
+
+.mainText h1{                           /* Commit: large heading for hero */
+    font-size: 58px;
+}
+
+.mainText h2{                           /* Commit: secondary heading with teal color */
+    font-size: 44px;
+    color: rgb(8, 165, 165);
+}
+
+.main img{                              /* Commit: adjust hero image spacing */
+    margin-right: -115px;
+}
+
+.mainText button{                       /* Commit: style explore button */
+    width: 140px;
+    height: 40px;
+    background-color: rgb(229, 4, 4);
+    color: white;
+    font-size: 24px;
+    border: none;
+}
+
+.mainText button:hover{                 /* Commit: hover effect for explore button */
+    border: 3px solid red;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+}
+
+.head{                                  /* Commit: center section headings */
+    text-align: center;
+    margin-top: 45px;
+    padding: 55px;
+}
+
+.head span{                             /* Commit: highlight span text in teal */
+    color: rgb(6, 161, 161);
+}
+
+.card {                                 /* Commit: flex layout for product cards */
+    display: flex;
+    justify-content: center;
+}
+
+.card .trend{                           /* Commit: style single product card */
+    width: 280px;
+    background-color: #fff;
+    margin-inline: 22px;
+}
+
+.trend img{                             /* Commit: make product image fill card */
+    width: 100%;
+    height: 64%;
+}
+
+.trend .cardText{                       /* Commit: add padding to card text */
+    padding: 10px;
+}
+
+.trend i{                               /* Commit: star rating color */
+    color: rgb(255, 149, 0);
+    font-size: 22px;
+}
+
+.trend button{                          /* Commit: add-to-cart button style */
+    width: 90px;
+    height: 28px;
+    background: red;
+    font-size: 12px;
+    border-radius: 22px;
+    border: none;
+    color: white;
+    margin-left: 33px;
+}
+
+.card .trend:hover{                     /* Commit: hover effect for card (grow + gray bg) */
+   background-color: gray;
+   width: 294px;
+   color: white;
+   transition: 0.6s ease;
+}
+
+.blog{                                  /* Commit: flex layout for blog section */
+    display: flex;
+    justify-content: center;
+}
+
+.blogCard{                              /* Commit: style blog card container */
+    display: flex;
+    background-color: #fff;
+    padding: 12px;
+    margin-inline: 22px;
+    width: 500px;
+}
+
+.blogCard:hover{                        /* Commit: hover effect expand + silver bg */
+    width: 520px;
+    transition: 0.7s ease;
+    background-color: silver;
+}
+
+.blogCard img{                          /* Commit: blog image style */
+    width: 44%;
+    border-radius: 11px;
+}
+
+.blogCard .blogText{                    /* Commit: style blog text */
+    text-align: center;
+    padding: 20px;
+}
+
+.blogText a{                            /* Commit: style blog link as button */
+    width: 90px;
+    padding: 7px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    border: none;
+}
+
+.customer{                              /* Commit: flex layout for reviews */
+    display: flex;
+    justify-content: center;
+}
+
+.customer .review{                      /* Commit: style review card */
+    width: 280px;
+    background-color: #fff;
+    padding: 24px;
+    margin-inline: 23px;
+}
+
+.review img{                            /* Commit: style review profile image */
+    width: 44%;
+    border-radius: 50%;
+}
+
+.review i{                              /* Commit: star color for reviews */
+    color: orange;
+    font-size: 22px;
+}
+
+.contactPage{                           /* Commit: style contact form box */
+    border: 4px solid rgb(2, 129, 129);
+    text-align: center;
+    padding: 44px;
+    width: 500px;
+    margin-left: 26%;
+}
+
+.contactPage input{                     /* Commit: style contact input fields */
+    width: 400px;
+    padding: 9px;
+    font-size: 18px;
+    outline: none;
+    margin-top: 11px;
+}
+
+.contactPage button{                    /* Commit: style contact submit button */
+    width: 140px;
+    height: 37px;
+    background-color: rgb(7, 134, 134);
+    color: white;
+    font-size: 22px;
+    border: none;
+    margin-top: 22px;
+}
+
+.contactPage button:hover{              /* Commit: hover effect for contact button */
+    border: 3px solid rgb(4, 127, 127);
+    background-color: transparent;
+    color: black;
+}
+
+.footer{                                /* Commit: style footer with flex and spacing */
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    color: black;
+    padding: 55px;
+    margin-top: 55px;
+}
+
+/* login */
+.loginPage{                             /* Commit: hide login box initially */
+    display: none;
+    width: 190px;
+    padding: 22px;
+    background-color: #fff;
+    text-align: center;
+    position: absolute;
+    margin-left: 81%;
+    top: 13%;
+}
+
+.loginPage input{                       /* Commit: style login inputs */
+    width: 166px;
+    padding: 4px;
+    border: 2px solid rgb(7, 150, 150);
+    margin-top: 11px;
+}
+
+.loginPage button{                      /* Commit: style login submit button */
+    margin-top: 13px;
+    width: 80px;
+    height: 28px;
+    border: none;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(215, 7, 7);
+}
